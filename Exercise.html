@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecar - Electric Car Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'body-color': 'rgba(10, 10, 11, 1)',
+                        'container-color': 'rgba(17, 18, 19, 1)',
+                        'first-color': 'rgba(65, 119, 220, 1)',
+                        'text-color': 'rgba(186, 190, 196, 1)',
+                        'text-color-light': 'rgba(136, 139, 145, 1)',
+                        'title-color': 'rgba(241, 242, 243, 1)',
+                        'white-color': 'rgba(255, 255, 255, 1)',
+                    },
+                    fontFamily: {
+                        'exo': ['Exo', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0px 0px 32px rgba(52, 109, 218, 0.8);
+            }
+        }
+        .bg-gradient-overlay {
+            background: linear-gradient(180deg, rgba(10,10,11,0.2) 0%, rgba(10,10,11,0.5) 100%);
+        }
+    </style>
+</head>
+<body class="bg-body-color font-exo text-text-color">
+    <!-- Header -->
+    <header class="w-full h-20 flex items-center justify-between px-4 md:px-8 lg:px-32">
+        <div class="flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span class="font-medium text-white-color text-base">Elecar</span>
+        </div>
+        <nav class="hidden md:flex gap-6 lg:gap-[92px]">
+            <a href="#" class="font-medium text-base text-first-color text-shadow">Home</a>
+            <a href="#" class="font-medium text-base text-white-color">About</a>
+            <a href="#" class="font-medium text-base text-white-color">Popular</a>
+            <a href="#" class="font-medium text-base text-white-color">Featured</a>
+        </nav>
+        <button class="md:hidden text-white-color">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-screen flex flex-col items-center justify-center px-4 py-16 md:py-24">
+        <h1 class="text-3xl md:text-4xl font-semibold text-white-color text-center">Choose The Best Car</h1>
+        <h2 class="mt-6 md:mt-8 text-xl md:text-2xl font-semibold text-white-color text-center">Porsche Mission E</h2>
+        <div class="mt-4 md:mt-6 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-text-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path><line x1="23" y1="13" x2="23" y2="11"></line><polyline points="11 6 7 12 13 12 9 18"></polyline></svg>
+            <span class="text-base">Electric car</span>
+        </div>
+        <img class="mt-8 md:mt-12 w-full max-w-[380px] h-auto object-contain" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/home-1.png" alt="Porsche Mission E">
+        <div class="mt-8 md:mt-12 flex flex-wrap justify-center gap-8 md:gap-16 lg:gap-[100px]">
+            <!-- Car stats -->
+            <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-container-color rounded-2xl flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M20 16a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path></svg>
+                </div>
+                <div class="mt-4 text-2xl font-semibold text-white-color">24°</div>
+                <div class="mt-2 text-xs text-text-color-light">TEMPERATURE</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-container-color rounded-2xl flex items-center justify-center">
+                    <span class="text-white-color text-[13px]">Km</span>
+                </div>
+                <div class="mt-4 text-2xl font-semibold text-white-color">873</div>
+                <div class="mt-2 text-xs text-text-color-light">MILEAGE</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-8 h-8 bg-container-color rounded-2xl flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10H7z"></path><path d="M7 3v4h10V3"></path><path d="M7 21v-4h10v4"></path></svg>
+                </div>
+                <div class="mt-4 text-2xl font-semibold text-white-color">94%</div>
+                <div class="mt-2 text-xs text-text-color-light">BATTERY</div>
+            </div>
+        </div>
+        <div class="mt-12 md:mt-16">
+            <button class="w-[90px] h-[90px] rounded-full border-2 border-solid border-[#02db8a] shadow-[0px_0px_16px_#02db8a] bg-transparent p-0 relative">
+                <div class="absolute w-[70px] h-[70px] rounded-full border-2 border-solid border-[#08925f] inset-0 m-auto"></div>
+                <span class="font-medium text-white-color text-sm z-10 relative">START</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="w-full bg-body-color py-16">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 px-4">
+            <div class="w-full lg:w-1/2 h-64 md:h-80 bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/about-1.png)] bg-cover bg-center rounded-lg"></div>
+            <div class="w-full lg:w-1/2 max-w-md flex flex-col gap-6">
+                <h2 class="text-2xl font-semibold text-title-color">
+                    Machines With <br class="hidden md:inline">
+                    Future Technology
+                </h2>
+                <p class="text-base text-text-color">
+                    See the future with high-performance electric cars produced by
+                    renowned brands. They feature futuristic builds and designs with new
+                    and innovative platforms that last a long time.
+                </p>
+                <button class="bg-first-color text-white-color font-medium rounded w-fit px-8 py-3.5">
+                    Know more
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section class="flex flex-col items-center justify-center py-16 bg-body-color w-full">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-2xl font-semibold text-title-color mb-12">
+                Choose Your Electric Car <br class="hidden md:inline">
+                Of The Porsche Brand
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                <!-- Car Cards -->
+                <div class="flex justify-center">
+                    <div class="w-full max-w-[258px] h-[328px] overflow-hidden rounded-none bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group.png)] bg-cover">
+                        <div class="p-6 flex flex-col h-full justify-between">
+                            <div>
+                                <h3 class="text-2xl font-semibold text-title-color">Porsche</h3>
+                                <p class="text-base text-text-color">Turbo S</p>
+                            </div>
+                            <img class="w-[180px] h-[81px] mx-auto object-contain" alt="Porsche Turbo S" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/brand1.png">
+                            
+                           
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="16 12 12 8 8 12"></polyline><line x1="12" y1="16" x2="12" y2="8"></line></svg>
+                                    <span class="ml-1 text-xs text-white-color">3.7 Sec</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white-color ml-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    <span class="ml-1 text-xs text-white-color">356 Km/h</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2zM7 12h10"></path></svg>
+                                    <span class="ml-1 text-xs text-white-color">Electric</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-semibold text-white-color">$175,900</span>
+                                <button class="bg-first-color hover:bg-first-color/90 rounded-[20px_0px_20px_0px] p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+               <div class="flex justify-center">
+        <div class="w-full max-w-[258px] h-[328px] overflow-hidden rounded-none bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group.png)] bg-cover">
+            <div class="p-6 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-2xl font-semibold text-title-color">Porsche</h3>
+                    <p class="text-base text-text-color">Taycan</p>
+                </div>
+                <img class="w-[180px] h-[81px] mx-auto object-contain" alt="Porsche Taycan" src="Pic/Porsche-Taycan 1.png">
+                <!-- Update other content like below -->
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 text-white-color" ...></svg>
+                        <span class="ml-1 text-xs text-white-color">3.7 Sec</span>
+                        <svg class="w-4 h-4 text-white-color ml-6" ...></svg>
+                        <span class="ml-1 text-xs text-white-color">356 Km/h</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 text-white-color" ...></svg>
+                        <span class="ml-1 text-xs text-white-color">Electric</span>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-semibold text-white-color">$114,900</span>
+                    <button class="bg-first-color hover:bg-first-color/90 rounded-[20px_0px_20px_0px] p-3">
+                        <svg  xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                                </button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex justify-center">
+        <div class="w-full max-w-[258px] h-[328px] overflow-hidden rounded-none bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group.png)] bg-cover">
+            <div class="p-6 flex flex-col h-full justify-between">
+                <div>
+                    <h3 class="text-2xl font-semibold text-title-color">Porsche</h3>
+                    <p class="text-base text-text-color">Taycan</p>
+                </div>
+                <img class="w-[180px] h-[81px] mx-auto object-contain" alt="Porsche Taycan" src="Pic/brand3.png">
+                <!-- Update other content like below -->
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 text-white-color" ...></svg>
+                        <span class="ml-1 text-xs text-white-color">3.7 Sec</span>
+                        <svg class="w-4 h-4 text-white-color ml-6" ...></svg>
+                        <span class="ml-1 text-xs text-white-color">356 Km/h</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 text-white-color" ...></svg>
+                        <span class="ml-1 text-xs text-white-color">Electric</span>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-semibold text-white-color">$114,900</span>
+                    <button class="bg-first-color hover:bg-first-color/90 rounded-[20px_0px_20px_0px] p-3">
+                        <svg  xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                                </button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>                <!-- Repeat similar structure for other car cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="w-full bg-body-color py-16 relative overflow-hidden">
+        <div class="relative mx-auto max-w-[1280px] px-4">
+            <img class="w-full max-w-[869px] h-auto mx-auto" alt="Map" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/map.png">
+            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                <h2 class="text-center text-2xl font-semibold text-title-color mb-12">More Features</h2>
+                <div class="relative w-full max-w-[354px] h-[463px]">
+                    <img class="absolute w-[200px] h-[463px] top-0 left-1/2 transform -translate-x-1/2 object-contain" alt="Featured car" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/featured-car.png">
+                    <!-- Feature cards -->
+                    <div class="absolute w-[131px] h-[92px] top-[63px] left-0">
+                        <div class="relative w-[127px] h-[92px] bg-[#ffffff1a] rounded-[20px] backdrop-blur backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(8px)_brightness(100%)]">
+                            <div class="absolute top-3 left-[39px] text-xl font-semibold text-white-color whitespace-nowrap">800v</div>
+                            <div class="w-12 top-11 left-10 text-white-color text-xs text-center absolute">Turbo<br>Chargin</div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="flex flex-col w-full items-center justify-center py-16 bg-body-color">
+        <div class="w-full max-w-[1280px] bg-body-color px-4">
+            <h2 class="text-2xl font-semibold text-title-color text-center mb-12">Featured Luxury Cars</h2>
+            <div class="flex justify-center mb-12">
+                <div class="flex flex-wrap gap-4 md:gap-[30px] justify-center">
+                    <button class="w-[52px] h-[52px] p-0 rounded-2xl bg-first-color">
+                        <span class="text-base font-normal text-title-color">All</span>
+                    </button>
+                    <button class="w-[52px] h-[52px] p-0 rounded-2xl bg-container-color">
+                        <img class="w-[30px] h-[30px] object-contain" alt="Tesla logo" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/logo3-1.png">
+                    </button>
+                    <!-- Add more brand buttons -->
+                </div>
+            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-[888px] mx-auto">
+    <!-- Tesla Model X -->
+    <div class="w-full max-w-[248px] h-[312px] bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group-3.png)] bg-no-repeat bg-cover relative mx-auto">
+        <div class="p-6">
+            <h3 class="text-2xl font-semibold text-title-color">Tesla</h3>
+            <p class="mt-2 text-base text-text-color">Model X</p>
+        </div>
+        <img class="absolute w-[180px] h-auto top-[120px] left-4 object-contain" alt="Tesla Model X" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/featured1.png">
+        <div class="absolute bottom-6 left-6 text-xl font-semibold text-title-color">$98,900</div>
+        <button class="absolute bottom-6 right-6 p-3 bg-first-color rounded-[20px_0px_20px_0px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+    </div>
+
+    <!-- Lamborghini Aventador -->
+    <div class="w-full max-w-[248px] h-[312px] bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group-2.png)] bg-no-repeat bg-cover relative mx-auto">
+        <div class="p-6">
+            <h3 class="text-2xl font-semibold text-title-color">Lamborghini</h3>
+            <p class="mt-2 text-base text-text-color">Aventador</p>
+        </div>
+        <img class="absolute w-[180px] h-auto top-[120px] left-4 object-contain" alt="Lamborghini Aventador" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/featured2.png">
+        <div class="absolute bottom-6 left-6 text-xl font-semibold text-title-color">$393,695</div>
+        <button class="absolute bottom-6 right-6 p-3 bg-first-color rounded-[20px_0px_20px_0px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+    </div>
+
+    <!-- Porsche 911 -->
+    <div class="w-full max-w-[248px] h-[312px] bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group-1.png)] bg-no-repeat bg-cover relative mx-auto">
+        <div class="p-6">
+            <h3 class="text-2xl font-semibold text-title-color">Porsche</h3>
+            <p class="mt-2 text-base text-text-color">911 Carrera</p>
+        </div>
+        <img class="absolute w-[180px] h-auto top-[120px] left-4 object-contain" alt="Porsche 911" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/featured3.png">
+        <div class="absolute bottom-6 left-6 text-xl font-semibold text-title-color">$114,400</div>
+        <button class="absolute bottom-6 right-6 p-3 bg-first-color rounded-[20px_0px_20px_0px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+    </div>
+
+    <!-- Audi R8 -->
+    <div class="w-full max-w-[248px] h-[312px] bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group.png)] bg-no-repeat bg-cover relative mx-auto">
+        <div class="p-6">
+            <h3 class="text-2xl font-semibold text-title-color">Audi</h3>
+            <p class="mt-2 text-base text-text-color">R8 V10</p>
+        </div>
+        <img class="absolute w-[180px] h-auto top-[120px] left-4 object-contain" alt="Audi R8" src="Pic/featured3.png">
+        <div class="absolute bottom-6 left-6 text-xl font-semibold text-title-color">$158,600</div>
+        <button class="absolute bottom-6 eatured4.pngright-6 p-3 bg-first-color rounded-[20px_0px_20px_0px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+    </div>
+
+    <!-- BMW i8 -->
+    <div class="w-full max-w-[248px] h-[312px] bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/mask-group-4.png)] bg-no-repeat bg-cover relative mx-auto">
+        <div class="p-6">
+            <h3 class="text-2xl font-semibold text-title-color">BMW</h3>
+            <p class="mt-2 text-base text-text-color">i8 Coupe</p>
+        </div>
+        <img class="absolute w-[180px] h-auto top-[120px] left-4 object-contain" alt="BMW i8" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/featured5.png">
+        <div class="absolute bottom-6 left-6 text-xl font-semibold text-title-color">$147,500</div>
+        <button class="absolute bottom-6 right-6 p-3 bg-first-color rounded-[20px_0px_20px_0px]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+    </div>
+</div>
+
+            
+             
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="w-full bg-body-color relative">
+        <div class="relative bg-[url(https://c.animaapp.com/mamm3wnoT6IBrV/img/subscribe-bg-.png)] bg-cover bg-center py-16 md:py-24">
+            <div class="absolute inset-0 bg-gradient-overlay"></div>
+            <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between">
+                <div class="max-w-[379px] mb-8 md:mb-0">
+                    <h2 class="text-2xl font-semibold text-title-color mb-6">
+                        Do You Want To Receive <br class="hidden md:inline">
+                        Special Offers?
+                    </h2>
+                    <p class="text-base text-text-color mb-8 max-w-[375px]">
+                        Be the first to receive all the information about our products and
+                        new cars by email by subscribing to our mailing list.
+                    </p>
+                    <button class="bg-first-color hover:bg-first-color/90 text-white-color font-medium px-8 py-3.5 rounded">
+                        Subscribe Now
+                    </button>
+                </div>
+                <div class="flex justify-center">
+                    <img class="w-auto h-auto max-w-full md:max-w-[450px] max-h-[202px] object-contain" alt="Subscribe" src="https://c.animaapp.com/mamm3wnoT6IBrV/img/subscribe-1.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-body-color py-16">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col space-y-4">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white-color" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <h2 class="ml-2 text-2xl font-semibold text-white-color">Elecar</h2>
+                    </div>
+                    <p class="text-sm text-text-color max-w-[200px]">
+                        We offer the best electric cars of the most recognized brands in
+                        the world.
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <h3 class="text-xl font-semibold text-title-color">Company</h3>
+                    <nav class="flex flex-col space-y-4">
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">About</a>
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">Cars</a>
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">History</a>
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">Shop</a>
+                    </nav>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <h3 class="text-xl font-semibold text-title-color">Information</h3>
+                    <nav class="flex flex-col space-y-4">
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">Request a quote</a>
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">Find a dealer</a>
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">Contact us</a>
+                        <a href="#" class="text-base text-text-color hover:text-white-color transition-colors">Services</a>
+                    </nav>
+                </div>
+                <div class="flex flex-col space-y-4">
+                    <h3 class="text-xl font-semibold text-title-color">Follow us</h3>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-text-color hover:text-white-color transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-text-color hover:text-white-color transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="text-text-color hover:text-white-color transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-16">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-text-color-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="14 16 12 12 14 8"></polyline><line x1="12" y1="12" x2="12" y2="16"></line></svg>
+                <span class="ml-1 text-xs text-text-color-light">Bedimcode. All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

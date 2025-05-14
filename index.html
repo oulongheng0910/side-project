@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Platform - Home</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font Awesome for icons -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="layout-container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="logo">
+
+                    <h2>LearnHub</h2>
+
+                </div>
+
+                <button class="close-sidebar" id="close-sidebar">
+
+                    <i class="fas fa-times"></i>
+
+                </button>
+
+            </div>
+
+            
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+
+                    <img src="/api/placeholder/40/40" alt="User Avatar">
+
+                </div>
+
+                <div class="user-info">
+
+                    <h4>Welcome back</h4>
+
+                    <p>John Doe</p>
+
+                </div>
+
+            </div>
+
+            
+
+            <nav class="sidebar-nav">
+
+                <ul>
+
+                    <li class="active">
+
+                        <a href="#"><i class="fas fa-home"></i> Home</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-book"></i> My Courses</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-graduation-cap"></i> Learning Path</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            
+
+            <div class="sidebar-courses">
+
+                <h3>My Courses</h3>
+
+                <ul class="course-list">
+
+                    <li>
+
+                        <a href="#">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/40/30" alt="Web Development">
+
+                            </div>
+
+                            <div class="course-info">
+
+                                <h4>Advanced Web Development</h4>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar" style="width: 75%"></div>
+
+                                </div>
+
+                                <span class="progress-text">75% Complete</span>
+
+                            </div>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/40/30" alt="UX/UI Design">
+
+                            </div>
+
+                            <div class="course-info">
+
+                                <h4>UX/UI Design Fundamentals</h4>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar" style="width: 45%"></div>
+
+                                </div>
+
+                                <span class="progress-text">45% Complete</span>
+
+                            </div>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/40/30" alt="Data Science">
+
+                            </div>
+
+                            <div class="course-info">
+
+                                <h4>Data Science Bootcamp</h4>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar" style="width: 20%"></div>
+
+                                </div>
+
+                                <span class="progress-text">20% Complete</span>
+
+                            </div>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <a href="#" class="view-all-link">View all courses <i class="fas fa-arrow-right"></i></a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="main-header">
+
+                <div class="menu-toggle" id="menu-toggle">
+
+                    <i class="fas fa-bars"></i>
+
+                </div>
+
+                <div class="search-container">
+
+                    <input type="text" placeholder="Search for courses...">
+
+                    <button class="search-button">
+
+                        <i class="fas fa-search"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="header-actions">
+
+                    <a href="#" class="notification-icon">
+
+                        <i class="fas fa-bell"></i>
+
+                        <span class="badge">3</span>
+
+                    </a>
+
+                    <a href="#" class="cart-icon">
+
+                        <i class="fas fa-shopping-cart"></i>
+
+                        <span class="badge">2</span>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <div class="content-wrapper">
+
+                <section class="hero-section">
+
+                    <div class="hero-content">
+
+                        <h1>Expand Your Knowledge</h1>
+
+                        <p>Discover thousands of courses taught by industry experts and advance your career.</p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#" class="btn btn-primary">Explore Courses</a>
+
+                            <a href="#" class="btn btn-outline">View Learning Paths</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-image">
+
+                        <img src="/api/placeholder/500/300" alt="Learning Illustration">
+
+                    </div>
+
+                </section>
+
+
+
+                <section class="featured-courses">
+
+                    <div class="section-header">
+
+                        <h2>Featured Courses</h2>
+
+                        <a href="#" class="view-all">View All</a>
+
+                    </div>
+
+                    <div class="course-grid">
+
+                        <div class="course-card">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/300/180" alt="Web Development">
+
+                                <span class="course-badge bestseller">Bestseller</span>
+
+                            </div>
+
+                            <div class="course-content">
+
+                                <div class="course-category">Web Development</div>
+
+                                <h3>Advanced Web Development with React & Node.js</h3>
+
+                                <div class="course-meta">
+
+                                    <span class="course-instructor">John Smith</span>
+
+                                    <div class="course-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star-half-alt"></i>
+
+                                        <span>4.5 (1,245)</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="course-details">
+
+                                    <span><i class="fas fa-video"></i> 42 Lectures</span>
+
+                                    <span><i class="fas fa-clock"></i> 12h 30m</span>
+
+                                    <span><i class="fas fa-signal"></i> Advanced</span>
+
+                                </div>
+
+                                <div class="course-footer">
+
+                                    <div class="course-price">$99.99</div>
+
+                                    <a href="#" class="btn btn-sm">Add to Cart</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="course-card">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/300/180" alt="UI/UX Design">
+
+                                <span class="course-badge new">New</span>
+
+                            </div>
+
+                            <div class="course-content">
+
+                                <div class="course-category">Design</div>
+
+                                <h3>UX/UI Design Fundamentals: Zero to Advanced</h3>
+
+                                <div class="course-meta">
+
+                                    <span class="course-instructor">Sarah Johnson</span>
+
+                                    <div class="course-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <span>5.0 (856)</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="course-details">
+
+                                    <span><i class="fas fa-video"></i> 38 Lectures</span>
+
+                                    <span><i class="fas fa-clock"></i> 10h 15m</span>
+
+                                    <span><i class="fas fa-signal"></i> All Levels</span>
+
+                                </div>
+
+                                <div class="course-footer">
+
+                                    <div class="course-price">$79.99</div>
+
+                                    <a href="#" class="btn btn-sm">Add to Cart</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="course-card">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/300/180" alt="Data Science">
+
+                            </div>
+
+                            <div class="course-content">
+
+                                <div class="course-category">Data Science</div>
+
+                                <h3>Data Science Bootcamp: Python, ML & AI</h3>
+
+                                <div class="course-meta">
+
+                                    <span class="course-instructor">Michael Chen</span>
+
+                                    <div class="course-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="far fa-star"></i>
+
+                                        <span>4.0 (723)</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="course-details">
+
+                                    <span><i class="fas fa-video"></i> 55 Lectures</span>
+
+                                    <span><i class="fas fa-clock"></i> 18h 45m</span>
+
+                                    <span><i class="fas fa-signal"></i> Intermediate</span>
+
+                                </div>
+
+                                <div class="course-footer">
+
+                                    <div class="course-price">$129.99</div>
+
+                                    <a href="#" class="btn btn-sm">Add to Cart</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <section class="popular-categories">
+
+                    <div class="section-header">
+
+                        <h2>Popular Categories</h2>
+
+                        <a href="#" class="view-all">View All</a>
+
+                    </div>
+
+                    <div class="categories-grid">
+
+                        <a href="#" class="category-card">
+
+                            <div class="category-icon">
+
+                                <i class="fas fa-laptop-code"></i>
+
+                            </div>
+
+                            <h3>Web Development</h3>
+
+                            <p>245 Courses</p>
+
+                        </a>
+
+                        <a href="#" class="category-card">
+
+                            <div class="category-icon">
+
+                                <i class="fas fa-paint-brush"></i>
+
+                            </div>
+
+                            <h3>Design</h3>
+
+                            <p>182 Courses</p>
+
+                        </a>
+
+                        <a href="#" class="category-card">
+
+                            <div class="category-icon">
+
+                                <i class="fas fa-chart-line"></i>
+
+                            </div>
+
+                            <h3>Data Science</h3>
+
+                            <p>156 Courses</p>
+
+                        </a>
+
+                        <a href="#" class="category-card">
+
+                            <div class="category-icon">
+
+                                <i class="fas fa-mobile-alt"></i>
+
+                            </div>
+
+                            <h3>Mobile Development</h3>
+
+                            <p>138 Courses</p>
+
+                        </a>
+
+                        <a href="#" class="category-card">
+
+                            <div class="category-icon">
+
+                                <i class="fas fa-briefcase"></i>
+
+                            </div>
+
+                            <h3>Business</h3>
+
+                            <p>210 Courses</p>
+
+                        </a>
+
+                        <a href="#" class="category-card">
+
+                            <div class="category-icon">
+
+                                <i class="fas fa-bullhorn"></i>
+
+                            </div>
+
+                            <h3>Marketing</h3>
+
+                            <p>195 Courses</p>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+
+                <section class="latest-courses">
+
+                    <div class="section-header">
+
+                        <h2>Latest Courses</h2>
+
+                        <a href="#" class="view-all">View All</a>
+
+                    </div>
+
+                    <div class="course-grid">
+
+                        <div class="course-card">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/300/180" alt="Mobile App Development">
+
+                                <span class="course-badge new">New</span>
+
+                            </div>
+
+                            <div class="course-content">
+
+                                <div class="course-category">Mobile Development</div>
+
+                                <h3>iOS & Swift: The Complete Developer Course</h3>
+
+                                <div class="course-meta">
+
+                                    <span class="course-instructor">Emily Rodriguez</span>
+
+                                    <div class="course-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="far fa-star"></i>
+
+                                        <span>4.2 (489)</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="course-details">
+
+                                    <span><i class="fas fa-video"></i> 46 Lectures</span>
+
+                                    <span><i class="fas fa-clock"></i> 15h 20m</span>
+
+                                    <span><i class="fas fa-signal"></i> All Levels</span>
+
+                                </div>
+
+                                <div class="course-footer">
+
+                                    <div class="course-price">$89.99</div>
+
+                                    <a href="#" class="btn btn-sm">Add to Cart</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="course-card">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/300/180" alt="Marketing">
+
+                            </div>
+
+                            <div class="course-content">
+
+                                <div class="course-category">Marketing</div>
+
+                                <h3>Digital Marketing Masterclass: SEO, Social Media & More</h3>
+
+                                <div class="course-meta">
+
+                                    <span class="course-instructor">David Wilson</span>
+
+                                    <div class="course-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star-half-alt"></i>
+
+                                        <span>4.6 (712)</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="course-details">
+
+                                    <span><i class="fas fa-video"></i> 52 Lectures</span>
+
+                                    <span><i class="fas fa-clock"></i> 14h 45m</span>
+
+                                    <span><i class="fas fa-signal"></i> Beginner</span>
+
+                                </div>
+
+                                <div class="course-footer">
+
+                                    <div class="course-price">$84.99</div>
+
+                                    <a href="#" class="btn btn-sm">Add to Cart</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="course-card">
+
+                            <div class="course-image">
+
+                                <img src="/api/placeholder/300/180" alt="Blockchain">
+
+                            </div>
+
+                            <div class="course-content">
+
+                                <div class="course-category">Blockchain</div>
+
+                                <h3>Blockchain & Cryptocurrency: The Complete Guide</h3>
+
+                                <div class="course-meta">
+
+                                    <span class="course-instructor">Alex Thompson</span>
+
+                                    <div class="course-rating">
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star"></i>
+
+                                        <span>4.9 (356)</span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="course-details">
+
+                                    <span><i class="fas fa-video"></i> 38 Lectures</span>
+
+                                    <span><i class="fas fa-clock"></i> 11h 30m</span>
+
+                                    <span><i class="fas fa-signal"></i> Intermediate</span>
+
+                                </div>
+
+                                <div class="course-footer">
+
+                                    <div class="course-price">$94.99</div>
+
+                                    <a href="#" class="btn btn-sm">Add to Cart</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <section class="instructor-cta">
+
+                    <div class="cta-content">
+
+                        <h2>Become an Instructor</h2>
+
+                        <p>Share your knowledge and earn income by teaching on our platform. Join our community of instructors today!</p>
+
+                        <a href="#" class="btn btn-primary">Start Teaching</a>
+
+                    </div>
+
+                    <div class="cta-image">
+
+                        <img src="/api/placeholder/400/250" alt="Become an Instructor">
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <footer class="main-footer">
+
+                <div class="footer-content">
+
+                    <div class="footer-logo">
+
+                        <h2>LearnHub</h2>
+
+                        <p>Expand your skills, advance your career</p>
+
+                    </div>
+
+                    <div class="footer-links">
+
+                        <div class="footer-column">
+
+                            <h3>Company</h3>
+
+                            <ul>
+
+                                <li><a href="#">About Us</a></li>
+
+                                <li><a href="#">Careers</a></li>
+
+                                <li><a href="#">Blog</a></li>
+
+                                <li><a href="#">Affiliates</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="footer-column">
+
+                            <h3>Community</h3>
+
+                            <ul>
+
+                                <li><a href="#">Instructors</a></li>
+
+                                <li><a href="#">Partners</a></li>
+
+                                <li><a href="#">Developers</a></li>
+
+                                <li><a href="#">Beta Testers</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="footer-column">
+
+                            <h3>Support</h3>
+
+                            <ul>
+
+                                <li><a href="#">Help Center</a></li>
+
+                                <li><a href="#">Contact Us</a></li>
+
+                                <li><a href="#">FAQ</a></li>
+
+                                <li><a href="#">Accessibility</a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <div class="copyright">
+
+                        <p>&copy; 2025 LearnHub. All rights reserved.</p>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+
+    <script>
+
+        // Simple JavaScript for sidebar toggle
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            const menuToggle = document.getElementById('menu-toggle');
+
+            const closeSidebar = document.getElementById('close-sidebar');
+
+            const sidebar = document.querySelector('.sidebar');
+
+            const layoutContainer = document.querySelector('.layout-container');
+
+            
+
+            menuToggle.addEventListener('click', function() {
+
+                layoutContainer.classList.toggle('sidebar-open');
+
+            });
+
+            
+
+            closeSidebar.addEventListener('click', function() {
+
+                layoutContainer.classList.remove('sidebar-open');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+help to design it with only css 
